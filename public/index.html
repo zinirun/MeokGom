@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>먹곰 :: 함께 찾는 맛집</title>
+    <script src="./js/module.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=950fa272c25cb99c43e2f34ea14e73b9"></script>
+
+    <script>
+        function loadMap() {
+            var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+            var options = { //지도를 생성할 때 필요한 기본 옵션
+                center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+                level: 3 //지도의 레벨(확대, 축소 정도)
+            };
+
+            var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        }
+
+    </script>
+</head>
+
+<body onload="loadMap()">
+    <div class="fixedTopDiv">
+        <span class="logo">먹곰</span>
+        <div class="menu">
+            <span class="menu_text">맛집검색</span>
+            <span class="menu_text">소식</span>
+            <span class="menu_text">리뷰쓰기</span>
+        </div>
+        <div class="user">로그인</div>
+    </div>
+    <div class="mainDiv">
+        <div class="section_rank">
+            <div class="section_title">
+                <span class="title_text">맛집 랭킹 [단국대]</span></div>
+            <div class="section_body">
+                <ul class="ul_rank">
+                    <li class="li_rank">호식당</li>
+                    <li class="li_rank">해피덮</li>
+                    <li class="li_rank">고수찜닭</li>
+                    <li class="li_rank">겐코</li>
+                    <li class="li_rank">BOXIN</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section_local">
+            <div class="section_title">
+                <span class="title_text">내 주변 맛집</span></div>
+            <div class="section_body">
+                <div id="map" style="width:500px;height:400px;"></div>
+            </div>
+        </div>
+
+        <div class="section_new">
+            <div class="section_title">
+                <span class="title_text">먹곰 유저 랭킹</span></div>
+            <div class="section_body">
+                <ul class="ul_rank">
+                    <li class="li_rank">김덕배</li>
+                    <li class="li_rank">조두팔</li>
+                    <li class="li_rank">최기백</li>
+                    <li class="li_rank">강철두</li>
+                    <li class="li_rank">곽두식</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section_new">
+            <div class="section_title">
+                <span class="title_text">베스트 리뷰</span></div>
+            <div class="section_body">
+                <ul class="ul_rank">
+                    <li class="li_rank">김덕배</li>
+                    <li class="li_rank">조두팔</li>
+                    <li class="li_rank">최기백</li>
+                    <li class="li_rank">강철두</li>
+                    <li class="li_rank">곽두식</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
