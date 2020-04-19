@@ -58,17 +58,8 @@ body {
 }
 
 .mainDiv {
-    position: absolute;
+    margin-top: 100px;
     top: 100px;
-    right: 10px;
-    left: 10px;
-}
-
-.mainDiv div{
-    position: relative;
-}
-
-.section_rank{
 }
 
 .section_title{
@@ -84,10 +75,6 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-ul{
-    position: static;
-}
-
 .ul_rank {
     background: #E0E8F1;
     padding: 0.5rem;
@@ -95,9 +82,34 @@ ul{
 }
 
 ul > .li_rank {
-    margin-left: 30px;
     margin-top: 10px;
-    list-style: decimal;
     font-size: 25px;
     font-weight: 600;
+    list-style-type: none;
+}
+
+.section_body_map_list{
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.map_text{
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    padding: 5px 8px;
+    border-radius: 7px;
+}
+
+#map{
+    margin-top: 25px;
+    background: #eee;
+    display: inline-block;
+    width: 80%;
+    height: 330px;
+    margin-bottom: 20px;
 }

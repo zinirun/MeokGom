@@ -10,13 +10,14 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=950fa272c25cb99c43e2f34ea14e73b9"></script>
 
     <script>
-        function loadMap() {
+        var mapX = 37.3236559;
+        var mapY = 127.1248912;
+        function loadMap(mapX, mapY) {
             var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
             var options = { //지도를 생성할 때 필요한 기본 옵션
-                center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+                center: new kakao.maps.LatLng(mapX, mapY), //지도의 중심좌표.
                 level: 3 //지도의 레벨(확대, 축소 정도)
             };
-
             var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
         }
 
@@ -36,7 +37,7 @@
     <div class="mainDiv">
         <div class="section_rank">
             <div class="section_title">
-                <span class="title_text">맛집 랭킹 [단국대]</span></div>
+                <span class="title_text">맛집 랭킹</span></div>
             <div class="section_body">
                 <ul class="ul_rank">
                     <li class="li_rank">호식당</li>
@@ -50,13 +51,17 @@
 
         <div class="section_local">
             <div class="section_title">
-                <span class="title_text">내 주변 맛집</span></div>
+                <span class="title_text">맛집 지도</span></div>
             <div class="section_body">
-                <div id="map" style="width:99%;height:400px;"></div>
+                <div id="map"></div>
+                <div class="section_body_map_list">
+                    <p class="map_text" onclick="loadMap(37.3236559,127.1151359)">단국대</p>
+                    <p class="map_text" onclick="loadMap(37.3316865,127.1248912)">보정동</p>
+                </div>
             </div>
         </div>
 
-        <div class="section_new">
+        <div class="section_user">
             <div class="section_title">
                 <span class="title_text">먹곰 유저 랭킹</span></div>
             <div class="section_body">
@@ -70,7 +75,7 @@
             </div>
         </div>
 
-        <div class="section_new">
+        <div class="section_review">
             <div class="section_title">
                 <span class="title_text">베스트 리뷰</span></div>
             <div class="section_body">
