@@ -13,7 +13,7 @@ var path = require('path'),
     url = require('url'), //채팅 모듈
     cors = require('cors'); //ajax 요청시 cors 지원
 
-app.set('port', process.env.PORT || 80);
+app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.urlencoded({
     extended: true
 }));
