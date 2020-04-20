@@ -9,47 +9,61 @@ body {
     width: auto;
 }
 
-.mainview{
+.mainview {
     width: auto;
 }
 
-@media (max-width: 319px){
-    *{
+@media (max-width: 319px) {
+    * {
         display: none;
     }
 }
 
-@media (max-width: 470px){
-    .mainview{
+@media (max-width: 470px) {
+    .mainview {
         width: auto;
     }
-    *{
+
+    * {
         font-size: 17px !important;
     }
-    .fixedTopDiv{
+
+    .fixedTopDiv {
         height: 50px !important;
     }
-    .menu{
+
+    .menu {
         margin-top: 8px !important;
         margin-left: 5px !important;
     }
-    .logo{
+
+    .logo {
         margin-left: 15px !important;
         margin-top: 10px !important;
         font-size: 20px !important;
     }
-    .map_text{
+
+    .mainDiv {
+        margin-top: 70px !important;
+    }
+
+    .map_text {
         font-size: 16px !important;
     }
-    .user{
+
+    .user {
         margin-top: 13px !important;
         font-size: 17px !important;
         margin-right: 15px !important;
     }
+
+    .section_title {
+        margin-bottom: -13px !important;
+    }
 }
 
-@media (max-width: 480px){
-    .mainview{
+@media (max-width: 480px) {
+    .mainview {
         width: auto;
     }
 }
@@ -77,7 +91,7 @@ body {
     margin-right: 20px;
 }
 
-.fixedTopDiv .menu{
+.fixedTopDiv .menu {
     float: left;
     margin-left: 15px;
     margin-top: 11px;
@@ -86,13 +100,13 @@ body {
     padding: 5px 7px;
 }
 
-.menu_text{
+.menu_text {
     cursor: pointer;
     color: #CEEBFF;
     padding: 5px 4px;
 }
 
-.menu_text:hover{
+.menu_text:hover {
     color: white;
 }
 
@@ -106,16 +120,17 @@ body {
 
 .mainDiv {
     margin-top: 100px;
-    top: 100px;
 }
 
-.section_title{
+.section_title {
     font-size: 27px;
     font-weight: 700;
     margin-bottom: -20px;
 }
 
-.title_text{
+.section_body {}
+
+.title_text {
     padding: 5px 15px;
     background-color: #2384FF;
     color: white;
@@ -135,7 +150,7 @@ ul > .li_rank {
     list-style-type: none;
 }
 
-.map_text{
+.map_text {
     cursor: pointer;
     border: 1px solid dodgerblue;
     background-color: aliceblue;
@@ -147,23 +162,21 @@ ul > .li_rank {
     padding: 8px 3px;
 }
 
-.map_table{
+.map_table {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 25px;
 }
 
-#map{
+#map {
     width: 100%;
     margin-top: 25px;
     background: #eee;
 }
 
-.map_td{
+.map_td {
     width: 80%;
     background: #eee;
 }
 
-.map_list_td{
-    
-}
+.map_list_td {}
