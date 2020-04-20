@@ -13,9 +13,34 @@ body {
     width: auto;
 }
 
-@media (max-width: 479px){
+@media (max-width: 395px){
+    *{
+        display: none;
+    }
+}
+
+@media (max-width: 470px){
     .mainview{
-        display:none;
+        width: auto;
+    }
+    *{
+        font-size: 20px !important;
+    }
+    .fixedTopDiv{
+        height: 60px !important;
+    }
+    .logo{
+        margin-left: 15px !important;
+        margin-top: 10px !important;
+        font-size: 25px !important;
+    }
+    .map_text{
+        font-size: 17px !important;
+    }
+    .user{
+        margin-top: 13px !important;
+        font-size: 21px !important;
+        margin-right: 15px !important;
     }
 }
 
@@ -108,15 +133,14 @@ ul > .li_rank {
 
 .map_text{
     cursor: pointer;
-    margin-left: 5px;
     border: 1px solid dodgerblue;
     background-color: aliceblue;
     color: dodgerblue;
     font-size: 23px;
     font-weight: 600;
-    padding: 10px 8px;
     border-radius: 10px;
     text-align: center;
+    padding: 8px 3px;
 }
 
 .map_table{
