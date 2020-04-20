@@ -7,8 +7,10 @@
     <script src="/public/js/module.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <link rel="stylesheet" type="text/css" href="/public/css/style.css">
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=950fa272c25cb99c43e2f34ea14e73b9"></script>
     <meta name="viewport" content="width: device-width, initial-scale=1">
+    
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=950fa272c25cb99c43e2f34ea14e73b9"></script>
+    
     <script>
         function loadMap(mapX, mapY) {
             var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
@@ -22,7 +24,7 @@
     </script>
 </head>
 
-<body onload="loadMap(37.3236559,127.1151359)">
+<body onload="loadMap(37.3235572,127.124093)">
     <div class="viewwrap">
         <div class="mainview">
             <div class="fixedTopDiv">
@@ -59,8 +61,8 @@
                                     <div id="map"></div>
                                 </td>
                                 <td class="map_list_td">
-                                    <p class="map_text" onclick="loadMap(37.3236559,127.1151359)">단국대</p>
-                                    <p class="map_text" onclick="loadMap(37.3316865,127.1248912)">보정동</p>
+                                    <p class="map_text" onclick="loadMap(37.3235572,127.124093)">단국대</p>
+                                    <p class="map_text" onclick="loadMap(37.3216044,127.1079144)">보정동</p>
                                 </td>
                             </tr>
                         </table>
@@ -92,6 +94,14 @@
                             <li class="li_rank">강철두</li>
                             <li class="li_rank">곽두식</li>
                         </ul>
+                    </div>
+                </div>
+
+                <div class="section_copyright">
+                    <div class="section_body">
+                        <p class="copy_text" style="margin-top: 30px;">ⓒ zinirun @ DKU 2020</p>
+                        <p class="copy_text" style="margin-bottom: -12px;">게재되는 음식점의 후기는</p>
+                        <p class="copy_text">사용자의 주관적인 의견입니다.</p>
                     </div>
                 </div>
             </div>

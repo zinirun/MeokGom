@@ -60,6 +60,14 @@ body {
     .section_title {
         margin-bottom: -13px !important;
     }
+
+    .map_table{
+        margin: 16px 0 17px -2px !important;
+    }
+    
+    .copy_text{
+        font-size: 13px !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -164,13 +172,11 @@ ul > .li_rank {
 
 .map_table {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin: 22px 0 25px -2px;
 }
 
 #map {
     width: 100%;
-    margin-top: 25px;
     background: #eee;
 }
 
@@ -180,3 +186,8 @@ ul > .li_rank {
 }
 
 .map_list_td {}
+
+.copy_text{
+    text-align: center;
+    font-size: 15px;
+}
