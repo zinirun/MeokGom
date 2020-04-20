@@ -8,9 +8,14 @@ body {
     cursor: default;
 }
 
+.mainview{
+    width: 600px;
+}
+
 .fixedTopDiv {
     background: dodgerblue;
     color: white;
+    width: 610px;
     height: 70px;
     text-align: center;
     position: fixed;
