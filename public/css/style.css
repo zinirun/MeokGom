@@ -6,16 +6,30 @@ body {
     font-size: 24px;
     font-weight: 500;
     cursor: default;
+    width: auto;
 }
 
 .mainview{
-    width: 600px;
+    width: auto;
 }
+
+@media (max-width: 479px){
+    .mainview{
+        display:none;
+    }
+}
+
+@media (max-width: 480px){
+    .mainview{
+        width: auto;
+    }
+}
+
 
 .fixedTopDiv {
     background: dodgerblue;
     color: white;
-    width: 610px;
+    width: auto;
     height: 70px;
     text-align: center;
     position: fixed;
@@ -45,7 +59,6 @@ body {
 
 .menu_text{
     cursor: pointer;
-    margin-left: 5px;
     color: #CEEBFF;
     padding: 5px 10px
 }
@@ -93,28 +106,36 @@ ul > .li_rank {
     list-style-type: none;
 }
 
-.section_body_map_list{
-    display: inline-block;
-    width: 19%;
-    text-align: center;
-    vertical-align: top;
-}
-
 .map_text{
     cursor: pointer;
-    background-color: cornflowerblue;
-    color: white;
+    margin-left: 5px;
+    border: 1px solid dodgerblue;
+    background-color: aliceblue;
+    color: dodgerblue;
     font-size: 23px;
     font-weight: 600;
-    padding: 5px 8px;
-    border-radius: 7px;
+    padding: 10px 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.map_table{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 #map{
+    width: 100%;
     margin-top: 25px;
     background: #eee;
-    display: inline-block;
+}
+
+.map_td{
     width: 80%;
-    height: 330px;
-    margin-bottom: 20px;
+    background: #eee;
+}
+
+.map_list_td{
+    
 }

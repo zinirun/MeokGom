@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <link rel="stylesheet" type="text/css" href="/public/css/style.css">
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=950fa272c25cb99c43e2f34ea14e73b9"></script>
-
+    <meta name="viewport" content="width: device-width, initial-scale=1">
     <script>
         function loadMap(mapX, mapY) {
             var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
@@ -23,68 +23,76 @@
 </head>
 
 <body onload="loadMap(37.3236559,127.1151359)">
-    <div class="mainview">
-        <div class="fixedTopDiv">
-            <span class="logo">먹곰</span>
-            <div class="menu">
-                <span class="menu_text">검색</span>
-                <span class="menu_text">소식</span>
-                <span class="menu_text">리뷰쓰기</span>
-            </div>
-            <div class="user">로그인</div>
-        </div>
-        <div class="mainDiv">
-            <div class="section_rank">
-                <div class="section_title">
-                    <span class="title_text">맛집 랭킹</span></div>
-                <div class="section_body">
-                    <ul class="ul_rank">
-                        <li class="li_rank">호식당</li>
-                        <li class="li_rank">해피덮</li>
-                        <li class="li_rank">고수찜닭</li>
-                        <li class="li_rank">겐코</li>
-                        <li class="li_rank">BOXIN</li>
-                    </ul>
+    <div class="viewwrap">
+        <div class="mainview">
+            <div class="fixedTopDiv">
+                <span class="logo">먹곰</span>
+                <div class="menu">
+                    <span class="menu_text">검색</span>
+                    <span class="menu_text">소식</span>
+                    <span class="menu_text">리뷰쓰기</span>
                 </div>
+                <div class="user">로그인</div>
             </div>
-
-            <div class="section_local">
-                <div class="section_title">
-                    <span class="title_text">맛집 지도</span></div>
-                <div class="section_body">
-                    <div id="map"></div>
-                    <div class="section_body_map_list">
-                        <p class="map_text" onclick="loadMap(37.3236559,127.1151359)">단국대</p>
-                        <p class="map_text" onclick="loadMap(37.3316865,127.1248912)">보정동</p>
+            <div class="mainDiv">
+                <div class="section_rank">
+                    <div class="section_title">
+                        <span class="title_text">맛집 랭킹</span></div>
+                    <div class="section_body">
+                        <ul class="ul_rank">
+                            <li class="li_rank">호식당</li>
+                            <li class="li_rank">해피덮</li>
+                            <li class="li_rank">고수찜닭</li>
+                            <li class="li_rank">겐코</li>
+                            <li class="li_rank">BOXIN</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
 
-            <div class="section_user">
-                <div class="section_title">
-                    <span class="title_text">먹곰 유저 랭킹</span></div>
-                <div class="section_body">
-                    <ul class="ul_rank">
-                        <li class="li_rank">김덕배</li>
-                        <li class="li_rank">조두팔</li>
-                        <li class="li_rank">최기백</li>
-                        <li class="li_rank">강철두</li>
-                        <li class="li_rank">곽두식</li>
-                    </ul>
+                <div class="section_local">
+                    <div class="section_title">
+                        <span class="title_text">맛집 지도</span></div>
+                    <div class="section_body">
+                        <table class="map_table">
+                            <tr>
+                                <td class="map_td">
+                                    <div id="map"></div>
+                                </td>
+                                <td class="map_list_td">
+                                    <p class="map_text" onclick="loadMap(37.3236559,127.1151359)">단국대</p>
+                                    <p class="map_text" onclick="loadMap(37.3316865,127.1248912)">보정동</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
 
-            <div class="section_review">
-                <div class="section_title">
-                    <span class="title_text">베스트 리뷰</span></div>
-                <div class="section_body">
-                    <ul class="ul_rank">
-                        <li class="li_rank">김덕배</li>
-                        <li class="li_rank">조두팔</li>
-                        <li class="li_rank">최기백</li>
-                        <li class="li_rank">강철두</li>
-                        <li class="li_rank">곽두식</li>
-                    </ul>
+                <div class="section_user">
+                    <div class="section_title">
+                        <span class="title_text">먹곰 유저 랭킹</span></div>
+                    <div class="section_body">
+                        <ul class="ul_rank">
+                            <li class="li_rank">김덕배</li>
+                            <li class="li_rank">조두팔</li>
+                            <li class="li_rank">최기백</li>
+                            <li class="li_rank">강철두</li>
+                            <li class="li_rank">곽두식</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section_review">
+                    <div class="section_title">
+                        <span class="title_text">베스트 리뷰</span></div>
+                    <div class="section_body">
+                        <ul class="ul_rank">
+                            <li class="li_rank">김덕배</li>
+                            <li class="li_rank">조두팔</li>
+                            <li class="li_rank">최기백</li>
+                            <li class="li_rank">강철두</li>
+                            <li class="li_rank">곽두식</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
