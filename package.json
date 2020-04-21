@@ -1,7 +1,7 @@
 {
     "name": "meokgom",
     "version": "1.0.0",
-    "description": "",
+    "description": "MeokGom",
     "main": "app.js",
     "scripts": {
         "start": "node app.js",
@@ -28,6 +28,7 @@
         "express-session": "^1.17.1",
         "fs": "0.0.1-security",
         "http": "0.0.1-security",
+        "mysql": "^2.18.1",
         "path": "^0.12.7",
         "serve-static": "^1.14.1",
         "url": "^0.11.0"
