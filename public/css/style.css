@@ -13,6 +13,46 @@ body {
     width: auto;
 }
 
+#loginDiv{
+    margin-top: 100px;
+    text-align: center;
+    color: #222;
+}
+
+.login_hr{
+    margin-top: 30px;
+    border: 1px solid #d4d4d4;
+}
+
+.loginBt{
+    display: inline-block;
+    cursor: pointer;
+    background: #eee;
+    width: 200px;
+    padding: 0.3rem 0;
+    font-size: 18px;
+}
+
+.login_text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.login_semi_text{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.login_small_text{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#login_facebook{
+    background: #244FA3;
+    color: white;
+}
+
 @media (max-width: 319px) {
     * {
         display: none;
@@ -75,7 +115,6 @@ body {
         width: auto;
     }
 }
-
 
 .fixedTopDiv {
     background: dodgerblue;
