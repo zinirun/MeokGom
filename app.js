@@ -13,6 +13,8 @@ var path = require('path'),
     url = require('url'), //채팅 모듈
     cors = require('cors'); //ajax 요청시 cors 지원
 
+var passport = require('passport');
+
 var mysql = require('mysql');
 
 var mySqlClient = mysql.createConnection({
@@ -41,41 +43,6 @@ app.use(cors());
 
 var router = express.Router();
 
-//mySqlClient.query('SELECT * FROM `todo` WHERE `userid` = ? ORDER BY `rank` ASC, `id` ASC;', [logined_userid], function (error, rows) {
-//    if (error) {
-//        console.log('error : ', error.message);
-//        return;
-//    } else {
-//        var rows_todo = [],
-//            rows_doing = [],
-//            rows_done = [];
-//        var todo_sign = 0,
-//            doing_sign = 0,
-//            done_sign = 0;
-//
-//        for (var i = 0; i < rows.length; i++) {
-//            if (rows[i].status == 1) {
-//                rows_todo[todo_sign] = rows[i];
-//                todo_sign++;
-//            } else if (rows[i].status == 2) {
-//                rows_doing[doing_sign] = rows[i];
-//                doing_sign++;
-//            } else if (rows[i].status == 3) {
-//                rows_done[done_sign] = rows[i];
-//                done_sign++;
-//            }
-//        }
-//
-//        console.log('데이터 성공적 분류함');
-//        res.send(ejs.render(data, {
-//            todoList: rows_todo,
-//            doingList: rows_doing,
-//            doneList: rows_done
-//        }));
-//        return true;
-//    }
-//});
-
 //MainPage 라우터
 router.route('/').get(function (req, res) {
 
@@ -83,6 +50,12 @@ router.route('/').get(function (req, res) {
         res.send(ejs.render(data, {}));
     });
 });
+
+//로그인 라우터
+router.route('/login').post(passport.authenticate('local',{
+    sucessRedirect: '/',
+    failureRedirect: '/login'
+}));
 
 app.use('/', router);
 

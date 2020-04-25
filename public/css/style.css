@@ -13,15 +13,22 @@ body {
     width: auto;
 }
 
+.loginBox{
+    background-color: #eee;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    margin: 0 15px 25px 15px;
+}
+
+.joinBox{
+    background: #eee;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    margin: 0 15px 20px 15px;
+}
+
 #loginDiv{
     margin-top: 100px;
     text-align: center;
     color: #222;
-}
-
-.login_hr{
-    margin-top: 30px;
-    border: 1px solid #d4d4d4;
 }
 
 .loginBt{
@@ -51,6 +58,11 @@ body {
 #login_facebook{
     background: #244FA3;
     color: white;
+}
+
+#login_kakao{
+    background: #f7e600;
+    color: black;
 }
 
 @media (max-width: 319px) {

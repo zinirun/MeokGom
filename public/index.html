@@ -34,22 +34,25 @@
                     <span class="menu_text">소식</span>
                     <span class="menu_text">리뷰쓰기</span>
                 </div>
-                <div class="user">로그인</div>
+                <div class="user" onclick="view_login()">로그인</div>
             </div>
-            <div id="loginDiv">
+            <div id="loginDiv" style="display: none">
                 <div class="loginBox">
-                    <p class="login_text">로그인</p>
+                    <p class="login_text">로그인하고 먹곰에 참여하세요!</p>
                     <div class="loginBt" id="login_facebook">페이스북으로 로그인</div>
+                    <div class="loginBt" id="login_kakao">카카오로 로그인</div>
                 </div>
 
                 <div class="joinBox">
-                    <hr class="login_hr">
                     <p class="login_semi_text">아직 회원이 아니신가요?</p>
                     <div class="loginBt" id="login_facebook">페이스북으로 가입하기</div>
+                    <div class="loginBt" id="login_kakao">카카오로 가입하기</div>
                     <p class="login_small_text">회원가입은 1분도 걸리지 않아요!</p>
                 </div>
+                
+                    <div class="loginBt" style="background: #bbb" onclick="hide_login()">돌아가기</div>
             </div>
-            <div class="mainDiv" id="mainDiv_id" style="display: none">
+            <div class="mainDiv" id="mainDiv">
                 <div class="section_rank">
                     <div class="section_title">
                         <span class="title_text">맛집 랭킹</span></div>
