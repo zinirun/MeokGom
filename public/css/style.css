@@ -26,7 +26,7 @@ body {
 }
 
 #loginDiv{
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
     color: #222;
 }
@@ -36,7 +36,7 @@ body {
     cursor: pointer;
     background: #eee;
     width: 200px;
-    padding: 0.3rem 0;
+    padding: 0.4rem 0;
     font-size: 18px;
 }
 
@@ -63,6 +63,11 @@ body {
 #login_kakao{
     background: #f7e600;
     color: black;
+}
+
+#joinBt{
+    background: dodgerblue;
+    color: white;
 }
 
 @media (max-width: 319px) {
